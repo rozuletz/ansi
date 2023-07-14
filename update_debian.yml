@@ -1,7 +1,7 @@
 ---
 - name: Update Debian-based machines
   hosts: all
-  become: yes
+  become: true
 
   tasks:
     - name: Update package cache
