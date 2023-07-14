@@ -1,0 +1,15 @@
+---
+- name: Update Debian-based machines
+  hosts: debian_machines
+  become: yes
+
+  tasks:
+    - name: Update package cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade packages
+      apt:
+        upgrade: yes
+        autoremove: yes
+        autoclean: yes
