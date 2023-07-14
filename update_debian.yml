@@ -1,6 +1,6 @@
 ---
 - name: Update Debian-based machines
-  hosts: debian_machines
+  hosts: all
   become: yes
 
   tasks:
